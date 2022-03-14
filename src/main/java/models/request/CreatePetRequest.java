@@ -1,4 +1,77 @@
 package models.request;
 
+import implementation.Category;
+import implementation.Tag;
+import lombok.*;
+
+
+@Getter
+@Setter
+@ToString
 public class CreatePetRequest {
+
+    private int id;
+    private Category category;
+    private String name;
+    private String[] photoUrls;
+    private Tag[]  tags;
+    private String status;
+
+
+    public CreatePetRequest(Builder builder) {
+        this.id = builder.id;
+        this.category = builder.category;
+        this.name = builder.name;
+        this.photoUrls = builder.photoUrls;
+        this.tags = builder.tags;
+        this.status = builder.status;
+    }
+
+
+    public static class Builder {
+
+
+        private  int id;
+        private  Category category;
+        private  String name;
+        private  String[] photoUrls;
+        private  Tag[]  tags;
+        private  String status;
+
+        public Builder withId(int id) {
+            this.id = id;
+            return this;
+        }
+
+        public Builder withCategory(Category category) {
+            this.category = category;
+            return this;
+        }
+
+        public Builder withName(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public Builder withPhotoUrls(String[] photoUrls) {
+            this.photoUrls =photoUrls;
+            return  this;
+        }
+
+        public Builder withTags(Tag[]  tags) {
+            this.tags=tags;
+            return this;
+        }
+
+        public Builder withStatus(String status) {
+            this.status=status;
+            return this;
+        }
+
+        public CreatePetRequest build() {
+            return new CreatePetRequest(this);
+        }
+
+    }
+
 }

@@ -1,0 +1,18 @@
+{
+  "category": {
+    "id": 5,
+    "name": "rex"
+  },
+  "id": 0,
+  "name": "burcu",
+  "photoUrls": [
+    "photoname"
+  ],
+  "status": "available",
+  "tags": [
+    {
+      "id": 2,
+      "name": "dog"
+    }
+  ]
+}
