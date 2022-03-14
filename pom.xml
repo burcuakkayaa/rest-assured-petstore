@@ -12,19 +12,20 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <aspectj.version>1.9.6</aspectj.version>
-        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
-        <extent.report.directory>report</extent.report.directory>
-    </properties>
+        <!--    <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory> -->
+          <allure.results.directory>${project.basedir}/target/allure-results</allure.results.directory>
+          <extent.report.directory>report</extent.report.directory>
+      </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>4.5.1</version>
-            <scope>test</scope>
-        </dependency>
+      <dependencies>
+          <dependency>
+              <groupId>io.rest-assured</groupId>
+              <artifactId>rest-assured</artifactId>
+              <version>4.5.1</version>
+              <scope>test</scope>
+          </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+          <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -129,6 +130,11 @@
     </dependencies>
 
     <build>
+        <testResources>
+            <testResource>
+                <directory>${project.basedir}/src/test/resources</directory>
+            </testResource>
+        </testResources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -144,7 +150,10 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
-                    <skip>true</skip>
+                <!--    <skip>true</skip> -->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                 </configuration>
             </plugin>
             <plugin>
@@ -161,8 +170,7 @@
                 </executions>
                 <configuration>
                     <systemPropertyVariables>
-                        <allure.results.directory>${allure.results.directory}
-                        </allure.results.directory>
+                        <allure.results.directory>${allure.results.directory}</allure.results.directory>
                     </systemPropertyVariables>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"

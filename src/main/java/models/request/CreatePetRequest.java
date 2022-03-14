@@ -4,6 +4,8 @@ import implementation.Category;
 import implementation.Tag;
 import lombok.*;
 
+import java.util.List;
+
 
 @Getter
 @Setter
@@ -13,8 +15,8 @@ public class CreatePetRequest {
     private int id;
     private Category category;
     private String name;
-    private String[] photoUrls;
-    private Tag[]  tags;
+    private List<String> photoUrls;
+    private List<Tag>  tags;
     private String status;
 
 
@@ -34,8 +36,8 @@ public class CreatePetRequest {
         private  int id;
         private  Category category;
         private  String name;
-        private  String[] photoUrls;
-        private  Tag[]  tags;
+        private List<String> photoUrls;
+        private List<Tag> tags;
         private  String status;
 
         public Builder withId(int id) {
@@ -53,12 +55,12 @@ public class CreatePetRequest {
             return this;
         }
 
-        public Builder withPhotoUrls(String[] photoUrls) {
+        public Builder withPhotoUrls(List<String> photoUrls) {
             this.photoUrls =photoUrls;
             return  this;
         }
 
-        public Builder withTags(Tag[]  tags) {
+        public Builder withTags(List<Tag>  tags) {
             this.tags=tags;
             return this;
         }

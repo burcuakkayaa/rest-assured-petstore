@@ -10,6 +10,8 @@ import org.apache.juneau.annotation.BeanConfig;
 import org.apache.juneau.annotation.BeanIgnore;
 import org.apache.juneau.annotation.Beanc;
 
+import java.util.List;
+
 @Getter
 @Setter
 @ToString
@@ -18,12 +20,12 @@ public class CreatePetResponse {
     private int id;
     private Category category;
     private String name;
-    private String[] photoUrls;
-    private Tag[] tags;
+    private List<String> photoUrls;
+    private List<Tag>  tags;
     private String status;
 
     @Beanc(properties = "category,id,name,photoUrls,status,tags")
-    public CreatePetResponse(Category category, int id, String name, String[] photoUrls, String status, Tag[] tags) {
+    public CreatePetResponse(Category category, int id, String name, List<String> photoUrls, String status, List<Tag> tags) {
 
 
         this.id = id;

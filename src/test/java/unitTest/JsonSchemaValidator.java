@@ -14,6 +14,8 @@ import org.junit.Test;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class JsonSchemaValidator {
@@ -31,15 +33,17 @@ public class JsonSchemaValidator {
 
         Category category = new Category(5, "rex");
 
-        String[] photoUrls = new String[]{"photoname"};
+        List<String> photoUrls = new ArrayList<>();
+        photoUrls.add("photoname");
 
-        Tag[] tag = new Tag[]{new Tag(2, "dog")};
+        List<Tag> tag = new ArrayList<>();
+        tag.add(new Tag(2, "dog"));
 
 
         CreatePetRequest createPetRequest = new CreatePetRequest.Builder()
                 .withId(0)
                 .withCategory(category)
-                .withName("burcu")
+                .withName("animal")
                 .withPhotoUrls(photoUrls)
                 .withTags(tag)
                 .withStatus("available")
