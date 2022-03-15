@@ -53,7 +53,6 @@ public class JsonSchemaValidator {
         JsonSerializer jsonSerializer = JsonSerializer.DEFAULT_READABLE;
         String json = jsonSerializer.serialize(createPetRequest);
 
-
         System.out.println(json);
 
 

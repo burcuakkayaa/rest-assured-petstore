@@ -17,7 +17,7 @@ import java.util.List;
 @ToString
 public class CreatePetResponse {
 
-    private int id;
+    private long id;
     private Category category;
     private String name;
     private List<String> photoUrls;
@@ -25,7 +25,7 @@ public class CreatePetResponse {
     private String status;
 
     @Beanc(properties = "category,id,name,photoUrls,status,tags")
-    public CreatePetResponse(Category category, int id, String name, List<String> photoUrls, String status, List<Tag> tags) {
+    public CreatePetResponse(Category category, long id, String name, List<String> photoUrls, String status, List<Tag> tags) {
 
 
         this.id = id;

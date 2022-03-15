@@ -12,7 +12,8 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <aspectj.version>1.9.6</aspectj.version>
-        <allure.results.directory>${project.basedir}/src/test/resources/allure.properties</allure.results.directory>
+    <!--    <allure.results.directory>${project.basedir}/src/test/resources/allure.properties</allure.results.directory> -->
+        <allure.results.directory>target/allure.properties</allure.results.directory>
           <extent.report.directory>report</extent.report.directory>
       </properties>
 

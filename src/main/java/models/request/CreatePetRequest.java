@@ -12,12 +12,14 @@ import java.util.List;
 @ToString
 public class CreatePetRequest {
 
-    private int id;
+    public static CreatePetRequest.Builder Builder;
+    private long id;
     private Category category;
     private String name;
     private List<String> photoUrls;
     private List<Tag>  tags;
     private String status;
+
 
 
     public CreatePetRequest(Builder builder) {
@@ -33,14 +35,14 @@ public class CreatePetRequest {
     public static class Builder {
 
 
-        private  int id;
+        private long id;
         private  Category category;
         private  String name;
         private List<String> photoUrls;
         private List<Tag> tags;
         private  String status;
 
-        public Builder withId(int id) {
+        public Builder withId(long id) {
             this.id = id;
             return this;
         }

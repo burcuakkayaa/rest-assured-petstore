@@ -2,6 +2,13 @@ package utils;
 
 import com.github.javafaker.Faker;
 
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
+import javax.xml.bind.DatatypeConverter;
+import java.security.Key;
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+
 public class TestDataCreator {
 
     private Faker faker = new Faker();
@@ -41,7 +48,18 @@ public class TestDataCreator {
 
     public String[] getStatus() {
 
-        return new String[] {"available", "pending", "sold"};
+        return new String[]{"available", "pending", "sold"};
+    }
+
+
+    public String generateKey(int keyLength) throws NoSuchAlgorithmException {
+
+        KeyGenerator keyGen = KeyGenerator.getInstance("AES");
+        keyGen.init(keyLength);
+        SecretKey secretKey = keyGen.generateKey();
+        byte[] encoded = secretKey.getEncoded();
+        return DatatypeConverter.printHexBinary(encoded).toLowerCase();
+
     }
 
 }

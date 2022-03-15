@@ -6,6 +6,10 @@ public class Constants {
 
     public static final String basePath ="/v2";
 
-    public static final String endpoint = "/pet";
+    public static class Endpoints {
+        public static final String endpoint = "/pet";
+        public static final String findByEndpoint = "/pet/findByStatus";
+
+    }
 
 }
