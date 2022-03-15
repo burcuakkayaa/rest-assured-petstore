@@ -47,7 +47,7 @@ public class PetHelper {
         return  response.then().extract().body().asString();
     }
 
-    @BeforeSuite
+    @BeforeClass
     public void setUp() {
 
         RestAssured.baseURI = Constants.baseURL;

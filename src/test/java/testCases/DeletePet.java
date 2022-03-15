@@ -4,6 +4,7 @@ import helpers.PetHelper;
 import io.restassured.response.Response;
 import org.apache.juneau.parser.ParseException;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import tech.grasshopper.allure.Author;
@@ -23,7 +24,7 @@ public class DeletePet extends PetHelper {
 
     private long id;
 
-    @BeforeTest
+    @BeforeMethod
     public void getId() {
 
         String name = testDataCreator.getRandomDogName();

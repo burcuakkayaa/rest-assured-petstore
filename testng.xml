@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-    <test name="Test">
+<suite name="Pet Store Test Suite">
+    <test name="Create New Pet">
         <classes>
             <class name="testCases.CreateNewPet"/>
         </classes>
     </test> <!-- Test -->
+
+    <test name="Delete Pet">
+        <classes>
+            <class name="testCases.DeletePet"/>
+        </classes>
+    </test> <!-- Test -->
+
+    <test name="Find Pet by Status">
+        <classes>
+            <class name="testCases.FindPetByStatus"/>
+        </classes>
+    </test> <!-- Test -->
+
+    <test name="Update Pet">
+        <classes>
+            <class name="testCases.UpdatePet"/>
+        </classes>
+    </test> <!-- Test -->
+
 </suite> <!-- Suite -->

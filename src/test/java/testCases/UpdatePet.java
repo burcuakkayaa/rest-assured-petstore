@@ -6,6 +6,7 @@ import models.response.CreatePetResponse;
 import org.apache.juneau.parser.ParseException;
 import org.apache.juneau.serializer.SerializeException;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import tech.grasshopper.allure.Author;
@@ -23,7 +24,7 @@ public class UpdatePet extends PetHelper {
     String photoUrl = testDataCreator.getFileName();
     String[] status = testDataCreator.getStatus();
 
-    @BeforeTest
+    @BeforeMethod
     public void getId() {
 
         Response response = createNewPetResponse(0, name, categoryName, photoUrl, status[0]);

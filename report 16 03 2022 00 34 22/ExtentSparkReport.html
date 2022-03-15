@@ -1,0 +1,747 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css">div[class='card-body'] table[class='table table-sm'] tr[class='event-row'] table[class='markup-table table '] tr:first-child > td:first-child { width: 100px; }</style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 16, 2022 12:34:10 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">BurcuAkkaya</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">PetStore</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.FindPetByStatus</p>
+            <p class="text-sm">
+              <span>12:34:17 AM</span> / <span>00:00:02:363</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCases.FindPetByStatus</h5>
+<span class='badge badge-success'>03.16.2022 12:34:17 AM</span>
+<span class='badge badge-danger'>03.16.2022 12:34:19 AM</span>
+<span class='badge badge-default'>00:00:02:363</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:02:363</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="2"><span>findAvailablePet</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">BurcuAkkaya</span>
+<span class="badge badge-pill badge-default">PetStore</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:34:23 AM</td>
+        <td>
+          <table class='markup-table table '><tr><td>Method</td><td>GET</td></tr><tr><td>Endpoint</td><td>https://petstore.swagger.io/v2/pet/findByStatus?status=available</td></tr><tr><td>Status Code</td><td>200</td></tr><tr><td>Request</td><td><a href='#' onClick="window.open('data/8146c43a-7617-4e9e-960b-2b6aa21a9d9d-Headers.html','','width=700,height=500'); return false;">Headers</a> &nbsp;&nbsp;</td></tr><tr><td>Response</td><td><a href='#' onClick="window.open('data/0dcc8239-fbfa-4d8d-aa27-d3481533591b-Body.html','','width=700,height=500'); return false;">Body</a> &nbsp;&nbsp;<a href='#' onClick="window.open('data/0dcc8239-fbfa-4d8d-aa27-d3481533591b-Headers.html','','width=700,height=500'); return false;">Headers</a> &nbsp;&nbsp;</td></tr></table>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.DeletePet</p>
+            <p class="text-sm">
+              <span>12:34:14 AM</span> / <span>00:00:02:621</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCases.DeletePet</h5>
+<span class='badge badge-success'>03.16.2022 12:34:14 AM</span>
+<span class='badge badge-danger'>03.16.2022 12:34:17 AM</span>
+<span class='badge badge-default'>00:00:02:621</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:946</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="4"><span>deleteAvailablePet</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">BurcuAkkaya</span>
+<span class="badge badge-pill badge-default">PetStore</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:34:23 AM</td>
+        <td>
+          <table class='markup-table table '><tr><td>Method</td><td>DELETE</td></tr><tr><td>Endpoint</td><td>https://petstore.swagger.io/v2/pet/9223372000666128022</td></tr><tr><td>Status Code</td><td>200</td></tr><tr><td>Request</td><td><a href='#' onClick="window.open('data/793f856f-4b64-4aaa-9ca7-c2d3b9b44c85-Headers.html','','width=700,height=500'); return false;">Headers</a> &nbsp;&nbsp;</td></tr><tr><td>Response</td><td><a href='#' onClick="window.open('data/c1c2b1f2-b711-4bbe-9be8-d8c9fd5cc3e7-Body.html','','width=700,height=500'); return false;">Body</a> &nbsp;&nbsp;<a href='#' onClick="window.open('data/c1c2b1f2-b711-4bbe-9be8-d8c9fd5cc3e7-Headers.html','','width=700,height=500'); return false;">Headers</a> &nbsp;&nbsp;</td></tr></table>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:790</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="5"><span>invalidStatusValueError</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">BurcuAkkaya</span>
+<span class="badge badge-pill badge-default">PetStore</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:34:23 AM</td>
+        <td>
+          <table class='markup-table table '><tr><td>Method</td><td>DELETE</td></tr><tr><td>Endpoint</td><td>https://petstore.swagger.io/v2/pet/1111111111</td></tr><tr><td>Status Code</td><td>404</td></tr><tr><td>Request</td><td><a href='#' onClick="window.open('data/819bc43d-2620-4140-bc94-aafbec1a64e9-Headers.html','','width=700,height=500'); return false;">Headers</a> &nbsp;&nbsp;</td></tr><tr><td>Response</td><td><a href='#' onClick="window.open('data/22caca98-52d8-4bb6-915b-643912e914e9-Headers.html','','width=700,height=500'); return false;">Headers</a> &nbsp;&nbsp;</td></tr></table>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.CreateNewPet</p>
+            <p class="text-sm">
+              <span>12:34:10 AM</span> / <span>00:00:02:990</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCases.CreateNewPet</h5>
+<span class='badge badge-success'>03.16.2022 12:34:10 AM</span>
+<span class='badge badge-danger'>03.16.2022 12:34:13 AM</span>
+<span class='badge badge-default'>00:00:02:990</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:02:990</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="7"><span>createNewPet</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">BurcuAkkaya</span>
+<span class="badge badge-pill badge-default">PetStore</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:34:23 AM</td>
+        <td>
+          <table class='markup-table table '><tr><td>Method</td><td>POST</td></tr><tr><td>Endpoint</td><td>https://petstore.swagger.io/v2/pet</td></tr><tr><td>Status Code</td><td>200</td></tr><tr><td>Request</td><td><a href='#' onClick="window.open('data/9b4e8c5c-7ccd-46d8-acbc-d8125ebc92b1-Body.html','','width=700,height=500'); return false;">Body</a> &nbsp;&nbsp;<a href='#' onClick="window.open('data/9b4e8c5c-7ccd-46d8-acbc-d8125ebc92b1-Headers.html','','width=700,height=500'); return false;">Headers</a> &nbsp;&nbsp;</td></tr><tr><td>Response</td><td><a href='#' onClick="window.open('data/ad116fb1-f009-4b30-ad01-4ea606be7d55-Body.html','','width=700,height=500'); return false;">Body</a> &nbsp;&nbsp;<a href='#' onClick="window.open('data/ad116fb1-f009-4b30-ad01-4ea606be7d55-Headers.html','','width=700,height=500'); return false;">Headers</a> &nbsp;&nbsp;</td></tr></table>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.UpdatePet</p>
+            <p class="text-sm">
+              <span>12:34:20 AM</span> / <span>00:00:00:822</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCases.UpdatePet</h5>
+<span class='badge badge-success'>03.16.2022 12:34:20 AM</span>
+<span class='badge badge-danger'>03.16.2022 12:34:21 AM</span>
+<span class='badge badge-default'>00:00:00:822</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:822</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="9"><span>updatePet</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">BurcuAkkaya</span>
+<span class="badge badge-pill badge-default">PetStore</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:34:23 AM</td>
+        <td>
+          <table class='markup-table table '><tr><td>Method</td><td>PUT</td></tr><tr><td>Endpoint</td><td>https://petstore.swagger.io/v2/pet</td></tr><tr><td>Status Code</td><td>200</td></tr><tr><td>Request</td><td><a href='#' onClick="window.open('data/7301987a-112b-4d5f-ba1f-4a4c1236db15-Body.html','','width=700,height=500'); return false;">Body</a> &nbsp;&nbsp;<a href='#' onClick="window.open('data/7301987a-112b-4d5f-ba1f-4a4c1236db15-Headers.html','','width=700,height=500'); return false;">Headers</a> &nbsp;&nbsp;</td></tr><tr><td>Response</td><td><a href='#' onClick="window.open('data/028a39e0-85d3-498e-804c-5f5e115252e8-Body.html','','width=700,height=500'); return false;">Body</a> &nbsp;&nbsp;<a href='#' onClick="window.open('data/028a39e0-85d3-498e-804c-5f5e115252e8-Headers.html','','width=700,height=500'); return false;">Headers</a> &nbsp;&nbsp;</td></tr></table>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">PetStore</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>PetStore</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:34:17 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>findAvailablePet</a>
+<div class="">
+<span class="badge badge-default">testCases.FindPetByStatus.findAvailablePet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:34:14 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='4'>deleteAvailablePet</a>
+<div class="">
+<span class="badge badge-default">testCases.DeletePet.deleteAvailablePet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:34:16 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='5'>invalidStatusValueError</a>
+<div class="">
+<span class="badge badge-default">testCases.DeletePet.invalidStatusValueError</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:34:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='7'>createNewPet</a>
+<div class="">
+<span class="badge badge-default">testCases.CreateNewPet.createNewPet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:34:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='9'>updatePet</a>
+<div class="">
+<span class="badge badge-default">testCases.UpdatePet.updatePet</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">BurcuAkkaya</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>BurcuAkkaya</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:34:17 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>findAvailablePet</a>
+<div class="">
+<span class="badge badge-default">testCases.FindPetByStatus.findAvailablePet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:34:14 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='4'>deleteAvailablePet</a>
+<div class="">
+<span class="badge badge-default">testCases.DeletePet.deleteAvailablePet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:34:16 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='5'>invalidStatusValueError</a>
+<div class="">
+<span class="badge badge-default">testCases.DeletePet.invalidStatusValueError</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:34:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='7'>createNewPet</a>
+<div class="">
+<span class="badge badge-default">testCases.CreateNewPet.createNewPet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:34:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='9'>updatePet</a>
+<div class="">
+<span class="badge badge-default">testCases.UpdatePet.updatePet</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 16, 2022 12:34:10 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 16, 2022 12:34:21 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Class Passed</p>
+<h3>4</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Class Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Class</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>4</b> class passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> class failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Methods</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>5</b> methods passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> methods failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>5</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"testCases.FindPetByStatus":2.363,"testCases.DeletePet":2.621,"testCases.CreateNewPet":2.99,"testCases.UpdatePet":0.822
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>BurcuAkkaya</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>PetStore</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 4,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 5,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 0,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 5
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript">document.getElementsByClassName('col-md-4')[2].style.setProperty('display','none');</script></body>
+</html>
