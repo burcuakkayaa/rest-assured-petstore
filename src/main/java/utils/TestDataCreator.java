@@ -5,9 +5,8 @@ import com.github.javafaker.Faker;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.xml.bind.DatatypeConverter;
-import java.security.Key;
 import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
+
 
 public class TestDataCreator {
 
